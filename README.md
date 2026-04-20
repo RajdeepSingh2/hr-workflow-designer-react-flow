@@ -2,6 +2,10 @@
 
 A modern, interactive workflow builder for HR processes using React, TypeScript, and React Flow.
 
+## 🌐 Live Demo
+
+https://hr-workflow-designer-react-flow.vercel.app
+
 ## 🎯 Features
 
 - **Visual Workflow Editor**: Drag-and-drop interface to design HR workflows
@@ -24,33 +28,6 @@ Edit node properties with dedicated forms for each node type
 View detailed execution logs with step-by-step workflow progression
 ![Simulation Panel](screenshots/simulation-panel.png)
 
-## 🚀 Quick Start
-
-### Prerequisites
-- Node.js 16+ and npm
-
-### Installation
-
-```bash
-# Clone or navigate to project
-cd hr-workflow-designer
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-The app will be available at **http://localhost:5173**
-
-### Build for Production
-
-```bash
-npm run build
-```
-
-## 📖 How to Use
 
 ### Creating a Workflow
 
@@ -178,104 +155,14 @@ src/
 - **Lucide React** - Beautiful icon library
 - **PostCSS & Autoprefixer** - CSS processing
 
-## 📦 Available Scripts
 
-```bash
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
-```
-
-## 🤖 Available Automations
-
-The app includes three mock automation actions ready to use:
-
-| Automation | Parameters | Purpose |
-|------------|------------|---------|
-| **Send Email** | `to`, `subject` | Send email notifications |
-| **Generate Document** | `template`, `recipient` | Generate HR documents |
-| **Notify Manager** | `managerId` | Alert manager of workflow events |
-
-## 💡 Tips & Best Practices
-
-- **Always start with Start Node** - Every workflow must begin with this
-- **Always end with End Node** - Every workflow must conclude with this
-- **Connect all nodes** - Avoid orphaned nodes for proper validation
-- **Add meaningful titles** - Use descriptive names for better clarity
-- **Use custom fields** - Add task-specific information as needed
-- **Test with simulation** - Run before deploying workflows
-- **Export workflows** - Keep JSON backups of important workflows
-
-## 🎨 Design Decisions
-
-- **Manual Save Button**: Properties require explicit "Update Node" click for better UX
-- **Drag-Drop Canvas**: Intuitive node placement matches industry standards
-- **Node Type Colors**: Each node type has distinct colors for quick visual recognition
-- **Emoji Labels**: Icons provide quick visual context in logs and nodes
-- **JSON Export**: Standard format for workflow portability and version control
-
-## 📋 Future Enhancements
-
-- [ ] Undo/Redo functionality
-- [ ] Workflow templates library
-- [ ] Auto-layout algorithm
-- [ ] Import workflows from JSON
-- [ ] Advanced scheduling options
-- [ ] Workflow history and analytics
-- [ ] Collaborative editing
-- [ ] Custom node types
-- [ ] Conditional branches
-- [ ] Loop support
-
-## 🐛 Troubleshooting
-
-### Nodes disappear after drop
-- Make sure the canvas has focus before dragging
-
-### Properties not updating
-- Click "Update Node" button to save changes
-- Check browser console for errors
-
-### Validation errors
-- Ensure you have exactly one Start and one End node
-- Verify all nodes are connected
-- Check that no edges loop back to Start or out of End
 
 ## 📄 License
 
 This project is part of an HR workflow case study.
 - **Simulation**: Execution logs display
 
-### Type Safety
-- Full TypeScript support
-- Interfaces for all node types
-- Type-safe props and state
 
-## Design Decisions
-
-1. **React Flow**: Chosen for robust graph manipulation and visualization
-2. **Custom Hooks**: Encapsulate complex logic (validation, selection, simulation)
-3. **Tailwind CSS**: Provides utility-first styling without custom CSS
-4. **Mock API**: Allows testing without backend dependency
-5. **Component Isolation**: Each node type is a separate component for maintainability
-
-## Future Improvements
-
-- **Undo/Redo**: Implement workflow history management
-- **Export/Import JSON**: Save and load workflow definitions
-- **Auto Layout**: Automatic node positioning algorithms
-- **Node Templates**: Pre-built workflow templates
-- **Minimap**: Visual navigation for large workflows
-- **Real-time Collaboration**: Multi-user editing support
-- **Custom Node Types**: Plugin system for user-defined nodes
-- **Advanced Validation**: Complex workflow rules engine
-- **Performance Optimization**: Virtualization for large workflows
-- **Accessibility**: Full WCAG compliance
 
 ## Technologies
 
